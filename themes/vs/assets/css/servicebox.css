@@ -1,0 +1,110 @@
+input[type=url] {
+    padding: 2px 2px;
+    margin: 2px 0;
+    box-sizing: border-box;
+}
+
+.menuuuuu{ background: #e7e7e7; }
+
+.serviceBox{
+    padding: 130px 20px 10px;
+    background: #e7e7e7;
+    text-align: center;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.serviceBox .service-icon{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    line-height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #000 inset;
+    background: linear-gradient(to top,#3226c3,#d32039 50%,#afabbf 50%);
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: scale(1) translateX(-50%);
+    transition: all 0.8s ease 0s;
+}
+
+.serviceBox:hover .service-icon{ font-size: 65px; }
+
+.serviceBox .title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.serviceBox:hover .title{ color: #8939cb; }
+
+.serviceBox .description{
+    font-size: 15px;
+    color: #808080;
+    line-height: 27px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.serviceBox .read-more{
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    background: linear-gradient(to top,#8633cb,#884fb7);
+    border-radius: 10px 10px 0 0;
+    transform: translateY(50px);
+    transition: all 0.3s ease 0s;
+}
+
+.serviceBox .read-more:hover{
+    color: #fff;
+    box-shadow: 0 0 5px #000;
+}
+
+.serviceBox:hover .read-more{ transform: translateY(0); }
+
+.serviceBox.yellow .service-icon{ background: linear-gradient(to top,#f1b02b,#fddb18 50%,#6d6e72 50%); }
+
+.serviceBox.yellow:hover .title{ color: #f1b02b; }
+
+.serviceBox.yellow .read-more{ background: linear-gradient(to top,#f1b02b,#fddb18); }
+
+.serviceBox.green .service-icon{ background: linear-gradient(to top,#50c338,#9dea28 50%,#6d6e72 50%); }
+
+.serviceBox.green:hover .title{ color: #50c338; }
+
+.serviceBox.green .read-more{ background: linear-gradient(to top,#50c338,#9dea28); }
+
+.serviceBox.pink .service-icon{ background: linear-gradient(to top,#fe4090,#ff58a6 50%,#6d6e72 50%); }
+
+.serviceBox.pink:hover .title{ color: #fe4090; }
+
+.serviceBox.pink .read-more{ background: linear-gradient(to top,#fe4090,#ff58a6); }
+
+@media only screen and (max-width:1200px){
+    .serviceBox .service-icon{
+        width: 160px;
+        height: 160px;
+        line-height: 240px;
+        top: -80px;
+    }
+}
+
+@media only screen and (max-width:990px){
+    .serviceBox{ margin-bottom: 30px; }
+    .serviceBox .service-icon{
+        width: 200px;
+        height: 200px;
+        line-height: 300px;
+        top: -90px;
+    }
+}

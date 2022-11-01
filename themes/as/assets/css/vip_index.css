@@ -1,0 +1,169 @@
+
+:root{
+    --white: #fff;
+    --gr-color1: #FACC1E;
+    --gr-color2: #FF7924;
+    --gr-color3: #00C0A7;
+    --gr-color4: #00E97C;
+    --gr-color5: #FC4365;
+    --gr-color6: #FE6229;
+    --gr-color7: #009AFC;
+    --gr-color8: #E75A7D;
+}
+.demo{ background-color: #e7e7e7; }
+
+.serviceBox{
+    background-color: var(--white);
+    font-family: 'Niramit', sans-serif;
+    text-align: center;
+    margin: 30px 15px;
+    border: 1px solid transparent;
+    box-shadow: -5px -5px 0 0 rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.serviceBox .service-icon{
+    color: var(--white);
+    background: linear-gradient(45deg,var(--gr-color1),var(--gr-color1),var(--gr-color2));
+    font-size: 60px;
+    line-height: 120px;
+    height: 120px;
+    width: 120px;
+    margin: -35px auto 20px;
+    border-radius: 50%;
+    transition:all 0.3s;
+}
+
+.serviceBox:hover .service-icon{
+    text-shadow: 0 0 2px #333;
+    box-shadow: 0 0 0 7px var(--white) inset, 0 0 0 10px var(--gr-color2);
+}
+
+.serviceBox .title{
+    color: var(--white);
+    background: linear-gradient(45deg,var(--gr-color2),var(--gr-color2),var(--gr-color1),var(--gr-color1));
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 0 -15px 10px;
+    display: block;
+    position: relative;
+}
+
+.serviceBox .title:before,
+.serviceBox .title:after{
+    content: '';
+    background: linear-gradient(45deg, transparent 49%, #a5480e 50%);
+    height: 15px;
+    width: 14px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.serviceBox .title:after{
+    background: linear-gradient(225deg, transparent 49%, #a5480e 50%);
+    top: auto;
+    bottom: 100%;
+    left: auto;
+    right: 0;
+}
+
+.serviceBox .description{
+    color: #666;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0 10px 10px;
+}
+
+.serviceBox.green .service-icon{
+    background: linear-gradient(45deg,var(--gr-color3),var(--gr-color3),var(--gr-color4));
+}
+.serviceBox.green:hover .service-icon{
+    box-shadow: 0 0 0 7px var(--white) inset, 0 0 0 10px var(--gr-color3);
+}
+.serviceBox.green .title{
+    background: linear-gradient(45deg,var(--gr-color3),var(--gr-color3),var(--gr-color4),var(--gr-color4));
+}
+.serviceBox.green .title:before{
+    background: linear-gradient(45deg, transparent 49%, #057264 50%);
+}
+.serviceBox.green .title:after{
+    background: linear-gradient(225deg, transparent 49%, #08894b 50%);
+}
+
+.serviceBox.pink .service-icon{
+    background: linear-gradient(45deg,var(--gr-color5),var(--gr-color5),var(--gr-color6));
+}
+.serviceBox.pink:hover .service-icon{
+    box-shadow: 0 0 0 7px var(--white) inset, 0 0 0 10px var(--gr-color5);
+}
+.serviceBox.pink .title{
+    background: linear-gradient(45deg,var(--gr-color5),var(--gr-color5),var(--gr-color6),var(--gr-color6));
+}
+.serviceBox.pink .title:before{
+    background: linear-gradient(45deg, transparent 49%, #a80624 50%);
+}
+.serviceBox.pink .title:after{
+    background: linear-gradient(225deg, transparent 49%, #ad350a 50%);
+}
+
+.serviceBox.blue .service-icon{
+    background: linear-gradient(45deg,var(--gr-color7),var(--gr-color7),var(--gr-color8));
+}
+.serviceBox.blue:hover .service-icon{
+    box-shadow: 0 0 0 7px var(--white) inset, 0 0 0 10px var(--gr-color7);
+}
+.serviceBox.blue .title{
+    background: linear-gradient(45deg,var(--gr-color7),var(--gr-color7),var(--gr-color8),var(--gr-color8));
+}
+.serviceBox.blue .title:before{
+    background: linear-gradient(45deg, transparent 49%, #0d6ca8 50%);
+}
+.serviceBox.blue .title:after{
+    background: linear-gradient(225deg, transparent 49%, #a30d30 50%);
+}
+
+@media only screen and (max-width:990px){
+    .serviceBox{ margin: 40px 10px 60px; }
+}
+
+/* why */
+    .whyJapelite h1, .happyClients h1 {
+    text-transform: uppercase;
+}
+
+
+.whyJapelite {
+	background: #e7e7e7;
+	text-align: center;
+}
+
+.whyJapeliteBox {
+	width: 100%;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.whyJapeliteBoxinner {
+	padding: 50px 15px 40px;
+	border-radius: 5px;
+	-webkit-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.whyJapeliteBoxinner:hover {
+	box-shadow: 0px 15px 40px 10px rgba(17, 157, 255, 0.1);
+}
+
+.whyJapeliteBoxinner:hover img {
+	transition: ease-in-out 0.5s;
+	transform: scale(1.1);
+}
+
+.whyJapeliteBoxinner h3 {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 30px 0px 20px;
+}

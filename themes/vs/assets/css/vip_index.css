@@ -1,0 +1,40 @@
+
+
+/* why */
+    .whyJapelite h1, .happyClients h1 {
+    text-transform: uppercase;
+}
+
+
+.whyJapelite {
+	background: #e7e7e7;
+	text-align: center;
+}
+
+.whyJapeliteBox {
+	width: 100%;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.whyJapeliteBoxinner {
+	padding: 50px 15px 40px;
+	border-radius: 5px;
+	-webkit-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.whyJapeliteBoxinner:hover {
+	box-shadow: 0px 15px 40px 10px rgba(17, 157, 255, 0.1);
+}
+
+.whyJapeliteBoxinner:hover img {
+	transition: ease-in-out 0.5s;
+	transform: scale(1.1);
+}
+
+.whyJapeliteBoxinner h3 {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 30px 0px 20px;
+}
